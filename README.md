@@ -107,21 +107,3 @@ my portfolio
 🔗 [**jovicdevelopment.github.io**](https://github.com/jovicdevelopment/jovicdevelopment.github.io/tree/main)
 
 ---
-
-## 📸 Screenshots for Grading (Add in Submission Document)
-
-1. Home Page  
-2. Resume Section  
-3. Projects  
-4. Lab Challenges  
-5. Contacts
-
----
-
-## ✅ How to Use
-
-1. Create a new GitHub repo (e.g., `portfolio`)  
-2. Paste this into `README.md`  
-3. Replace all placeholder content with **your personal info**  
-4. Upload screenshots as images to the repo and link them in markdown  
-5. Share the repo link or publish using GitHub Pages
