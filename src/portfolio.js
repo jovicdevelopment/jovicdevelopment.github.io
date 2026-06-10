@@ -3,387 +3,390 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Joseph Victor",
+  title: "Hi, I'm Joseph Victor",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Cybersecurity & Network Security Specialist 🛡️ passionate about ethical hacking, cloud security, and deploying local AI systems. CEH & Cloud Security certified with distinction. Building a safer digital Africa — one network at a time."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/jovicdevelopment",
+  linkedin: "https://www.linkedin.com/in/jvictor-tech/",
+  gmail: "josephjovic23@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "CYBERSECURITY SPECIALIST WITH A FOCUS ON NETWORK DEFENSE, ETHICAL HACKING & AI SECURITY",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Conduct vulnerability assessments and penetration testing using Nmap, Wireshark, and Burp Suite."),
+    emoji("⚡ Design and implement secure network infrastructures including ACLs, VLANs, DNS, DHCP, and TCP/IP configurations."),
+    emoji("⚡ Deploy and manage cloud security architectures with a focus on IAM, perimeter hardening, and threat monitoring."),
+    emoji("⚡ Architect air-gapped local AI environments using Ollama and MCP server configurations for secure code generation."),
+    emoji("⚡ Apply behavioral psychology insights to detect human-factor security risks and design security awareness programs."),
+    emoji("⚡ Create cybersecurity technical content and tutorials for the East African tech community on YouTube.")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Nmap",
+      fontAwesomeClassname: "fas fa-network-wired",
+      style: { color: "#4D4D4D" }
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Wireshark",
+      fontAwesomeClassname: "fas fa-fish",
+      style: { color: "#1679A7" }
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux",
+      style: { color: "#FCC624" }
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python",
+      style: { backgroundColor: "transparent", color: "#3776AB" }
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "AWS / Cloud",
+      fontAwesomeClassname: "fab fa-aws",
+      style: { color: "#FF9900" }
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker",
+      style: { color: "#1488C6" }
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt",
+      style: { color: "#F05032" }
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github",
+      style: { color: "#181717" }
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "VS Code",
+      fontAwesomeClassname: "fas fa-code",
+      style: { color: "#007ACC" }
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Cisco / Packet Tracer",
+      fontAwesomeClassname: "fas fa-server",
+      style: { color: "#1BA0D7" }
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Daystar University",
+      logo: require("./assets/images/daystarLogo.png"),
+      subHeader: "Bachelor of Arts in Social Work & Psychology",
+      duration: "2022 - 2026",
+      desc: "Pursuing a BA with a minor in Psychology and Counseling, developing a strong foundation in behavioral science, human-centered communication, and ethical decision-making.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Applied behavioral psychology insights to identify human-factor security risks in cybersecurity contexts",
+        "Developed high emotional intelligence and crisis de-escalation skills applicable to technical stakeholder management"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Cyber Shujaa Program",
+      logo: require("./assets/images/cybershujaaLogo.png"),
+      subHeader: "Cloud & Network Security Certification — Graduated with Distinction",
+      duration: "January 2026 - April 2026",
+      desc: "Advanced certification covering cloud infrastructure security, network defense strategies, and secure architecture design.",
+      descBullets: [
+        "Graduated with Distinction (Cohort IX)",
+        "Focused on cloud monitoring, IAM, and network perimeter hardening"
+      ]
+    },
+    {
+      schoolName: "Cyber Shujaa Program",
+      logo: require("./assets/images/cybershujaaLogo.png"),
+      subHeader: "Certified Ethical Hacker (CEH) — Graduated with Distinction",
+      duration: "April 2025 - August 2025",
+      desc: "Intensive ethical hacking certification covering offensive security techniques, vulnerability assessment, and penetration testing methodologies.",
+      descBullets: [
+        "Graduated with Distinction",
+        "Hands-on training in Nmap, Wireshark, threat modeling, and host discovery"
+      ]
+    },
+    {
+      schoolName: "Cyberpro Global",
+      logo: require("./assets/images/cyberproLogo.png"),
+      subHeader: "Cybersecurity Foundational Skills Certificate",
+      duration: "January 2025 - April 2025",
+      desc: "Foundational program covering core cybersecurity principles, risk management, and defensive security practices.",
+      descBullets: [
+        "Covered TCP/IP, OSI model, access control, and incident response fundamentals"
+      ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Your top proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Network Security & Infrastructure",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Backend",
+      Stack: "Ethical Hacking & Penetration Testing",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Cloud Security",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "AI & Local LLM Engineering",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "Scripting & Automation",
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Network Support & Maintenance Technician",
+      company: "Daystar University",
+      companylogo: require("./assets/images/daystarLogo.png"),
+      date: "2022 – 2025",
+      desc: "Engineered, deployed, and secured standalone router environments across 15 critical network nodes, maintaining 99.9% network uptime across the university infrastructure.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Conducted host discovery and active port scanning using Nmap to identify unpatched services and reinforce perimeter defenses",
+        "Monitored live packet streams using Wireshark to resolve bottlenecks and prevent network latency",
+        "Troubleshot and resolved over 120 technical incidents for cross-functional end-users",
+        "Applied behavioral psychology insights to identify human-factor security risks and design security baseline practices"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+/* Your Open Source Section to View Your Github Pinned Projects */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
+// Big Projects Section
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "CYBERSECURITY AND AI PROJECTS I HAVE BUILT AND DEPLOYED",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/daystarLogo.png"),
+      projectName: "DigiShield",
+      projectDesc: "A structured cybersecurity compliance framework engineered to fortify Kenyan SMEs against digital vulnerability vectors, mapping technical controls to regional data protection acts.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/jovicdevelopment"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/daystarLogo.png"),
+      projectName: "Local AI Security Lab",
+      projectDesc: "A fully secure, air-gapped local development ecosystem using Ollama + Qwen2.5-Coder:14b with MCP server integration for zero-leakage script generation and codebase audits.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/jovicdevelopment"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "Certifications, distinctions, and milestones in my cybersecurity journey.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Cloud & Network Security — With Distinction",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Cyber Shujaa Program (Cohort IX) — Issued 29 April 2026. Conducted by USIU-Africa, Serianu Ltd and Kenya Bankers Association. Cert No: CS2026-BR2604270917095402.",
+      image: require("./assets/images/cloudNetworkSecurity.png"),
+      imageAlt: "Cloud & Network Security Certificate",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Cisco Ethical Hacker — With Distinction",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Cyber Shujaa Program (Cohort III) — Issued 27 August 2025. Conducted by USIU-Africa, Serianu Ltd and Kenya Bankers Association. Cert No: CS2025-AU2508240733101045.",
+      image: require("./assets/images/ciscoShujaaEthicalHacker.png"),
+      imageAlt: "Cisco Ethical Hacker Certificate — Cyber Shujaa",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Ethical Hacker — Cisco Networking Academy",
+      subtitle:
+        "Issued 14 August 2025 by Cisco Networking Academy. Covers penetration testing, social engineering, network/cloud/IoT vulnerability exploitation, and post-exploitation techniques.",
+      image: require("./assets/images/ciscoEthicalHacker.png"),
+      imageAlt: "Cisco Networking Academy Ethical Hacker Certificate",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Cybersecurity Foundational Skills (COP 400)",
+      subtitle:
+        "Cyberpro Global & Daystar University — Issued 25 July 2025. A collaborative initiative covering TCP/IP, OSI model, access control, risk management, and incident response. Cert No: COP400-2510.",
+      image: require("./assets/images/cybersecurityFoundational.png"),
+      imageAlt: "Cybersecurity Foundational Skills Certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Content & YouTube",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "I create cybersecurity and networking content for the East African tech community, covering open-source tools, local AI deployments, and practical security labs.",
+  displayMediumBlogs: "false",
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://www.youtube.com/@jovicdevelopment",
+      title: "Local AI Security Lab Setup with Ollama & MCP",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A step-by-step guide on deploying a fully air-gapped local LLM environment using Ollama and Qwen2.5-Coder for secure code generation and codebase auditing."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://www.youtube.com/@jovicdevelopment",
+      title: "Network Reconnaissance with Nmap — Beginner to Advanced",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Practical walkthrough of host discovery, port profiling, and service detection using Nmap for network security assessments in East African enterprise environments."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Talks Sections
+// Talks Section
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
+  title: "TALKS & COMMUNITY",
+  subtitle: emoji("Sharing cybersecurity knowledge and raising digital literacy across East Africa 🌍"),
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Child Online Safety & Parental Controls for Kenyan Parents",
+      subtitle: "Community awareness session on Android parental controls and digital protection for children",
+      slides_url: "",
+      event_url: "https://www.linkedin.com/in/jvictor-tech/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "DISCUSSING CYBERSECURITY, AI, AND DIGITAL SAFETY IN AFRICA",
+  podcast: [],
+  display: false
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Open to cybersecurity roles, collaborations, and consulting opportunities. My inbox is always open.",
+  number: "+254 114 977 343",
+  email_address: "josephjovic23@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,

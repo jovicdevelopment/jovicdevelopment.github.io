@@ -52,16 +52,19 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
+         
+        <div className="greeting-image-div">
+  <img
+    alt="Joseph Victor"
+    src={require("../../assets/images/josephVictor.png")}
+    style={{
+      width: "100%",
+      maxWidth: "420px",
+      borderRadius: "16px",
+      boxShadow: "0 20px 50px rgba(0,0,0,0.4)"
+    }}
+  />
+</div>
         </div>
       </div>
     </Fade>
