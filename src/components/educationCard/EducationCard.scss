@@ -38,18 +38,19 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
+  height: auto;
   font-family: "Poppins", sans-serif;
   letter-spacing: -0.5px;
+  color: $titleColor;
 }
 
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
   width: 6rem;
-  height: 6rem;
+  height: 4.5rem;
   box-shadow: 0 4px 15px $lightBoxShadowDarker;
-  border-radius: 12px;
+  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
@@ -84,16 +85,22 @@
   margin-bottom: 0.8rem;
   color: $textColor;
   line-height: 1.6;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .education-text-bullets > ul {
   margin-top: 0.8rem;
   list-style-position: inside;
+  padding-left: 0;
 }
 
 .education-text-bullets > ul > li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   color: $textColor;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Media Query */
@@ -115,17 +122,17 @@
   }
   .education-text-school {
     font-size: 20px;
-    height: 23px;
+    height: auto;
   }
   .education-text-duration {
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 3.75rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 }
 
@@ -141,11 +148,11 @@
   }
   .education-roundedimg {
     margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 3.75rem;
     margin-bottom: 1rem;
     margin-right: 0;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .education-text-bullets > ul {
     max-width: 80%;

@@ -15,14 +15,13 @@
 
 .greeting-main {
   display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  align-items: center;
 }
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
 }
 
 .greeting-main > * {
@@ -37,6 +36,7 @@
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+  gap: 15px;
 }
 .download-link-button {
   text-decoration: none;
@@ -46,16 +46,36 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .greeting-text-p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 1.6;
+  color: $subTitle;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.greeting-image-div > img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
 .wave-emoji {
@@ -101,7 +121,8 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
   }
   .greeting-text {
     font-size: 30px;
@@ -113,10 +134,15 @@
     text-align: center;
   }
   .greeting-main {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .greeting-image-div {
+    justify-content: center;
     height: 256px;
+  }
+  .greeting-image-div > img {
+    max-width: 80%;
   }
 }
 
