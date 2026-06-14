@@ -3,15 +3,16 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-card:hover + .education-card-border {
-  border-color: $educationCardBorder;
+  border-color: $buttonColor;
   width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  -webkit-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-card-border {
@@ -19,10 +20,10 @@
   width: 80%;
   border-top: 2px solid $lightBorder1;
   margin-bottom: 20px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
-  transition: width 0.6s ease-in-out;
+  -webkit-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .education-head {
@@ -32,12 +33,14 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   height: 27px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.5px;
 }
 
 .education-roundedimg {
@@ -45,8 +48,14 @@
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  box-shadow: 0 4px 15px $lightBoxShadowDarker;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.education-roundedimg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px $lightBoxShadowDarker;
 }
 
 .education-card-right {
@@ -54,28 +63,37 @@
 }
 
 .education-text-subHeader {
-  color: $textColor;
-  font-weight: 700;
-  font-size: 19px;
+  color: $titleColor;
+  font-weight: 600;
+  font-size: 18px;
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
 }
 
 .education-text-duration {
-  color: $titleColor;
-  font-size: 19px;
+  color: $subTitle;
+  font-size: 16px;
   margin: 0px;
   padding-top: 0.5rem;
+  font-weight: 500;
 }
 
 .education-text-desc {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: $textColor;
+  line-height: 1.6;
 }
 
 .education-text-bullets > ul {
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
+  list-style-position: inside;
+}
+
+.education-text-bullets > ul > li {
+  margin-bottom: 0.5rem;
+  color: $textColor;
 }
 
 /* Media Query */
@@ -107,6 +125,7 @@
     height: 4rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
+    border-radius: 10px;
   }
 }
 
@@ -126,6 +145,7 @@
     height: 4rem;
     margin-bottom: 1rem;
     margin-right: 0;
+    border-radius: 10px;
   }
   .education-text-bullets > ul {
     max-width: 80%;
