@@ -22,9 +22,22 @@
   align-items: flex-start;
 }
 
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+.skills-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  display: block;
+}
+
+.hacking-image {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .skills-heading {
