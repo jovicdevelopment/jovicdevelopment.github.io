@@ -25,6 +25,17 @@ export default function Skills() {
                 boxShadow: "0 20px 50px rgba(0,0,0,0.4)"
               }}
             />
+            <img
+              alt="Hacking"
+              src={require("../../assets/images/hacking_image.jpg")}
+              style={{
+                width: "100%",
+                maxWidth: "500px",
+                borderRadius: "16px",
+                boxShadow: "0 20px 50px rgba(0,0,0,0.4)",
+                marginTop: "30px"
+              }}
+            />
           </div>
         </Fade>
         <Fade right duration={1000}>

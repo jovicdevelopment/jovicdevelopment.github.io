@@ -41,7 +41,11 @@
   height: auto;
   font-family: "Poppins", sans-serif;
   letter-spacing: -0.5px;
-  color: $titleColor;
+  color: $textColor;
+}
+
+.education-text-school.dark-mode {
+  color: #ffffff !important;
 }
 
 .education-roundedimg {
@@ -64,12 +68,16 @@
 }
 
 .education-text-subHeader {
-  color: $titleColor;
+  color: $textColor;
   font-weight: 600;
   font-size: 18px;
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
+}
+
+.education-text-subHeader.dark-mode {
+  color: #ffffff !important;
 }
 
 .education-text-duration {
@@ -80,13 +88,22 @@
   font-weight: 500;
 }
 
+.education-text-duration.dark-mode {
+  color: #ffffff !important;
+}
+
 .education-text-desc {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  color: $textColor;
+  color: $subTitle;
   line-height: 1.6;
   font-size: 15px;
   font-weight: 400;
+}
+
+.education-text-desc.dark-mode {
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
 .education-text-bullets > ul {
@@ -97,10 +114,15 @@
 
 .education-text-bullets > ul > li {
   margin-bottom: 0.6rem;
-  color: $textColor;
+  color: $subTitle;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.education-text-bullets > ul > li.dark-mode {
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
 /* Media Query */
