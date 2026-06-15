@@ -24,11 +24,11 @@
 }
 
 .header {
-  background-color: $lightBackground1;
+  background-color: $darkBackground;
   max-width: 100%;
   padding: 16px 24px;
   margin: 0px auto;
-  box-shadow: 0 2px 8px $lightBoxShadow;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -47,7 +47,7 @@
 .header li a {
   display: block;
   padding: 14px 18px;
-  color: $textColor;
+  color: $textColorDark;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -57,7 +57,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: rgba(255, 255, 255, 0.1);
   color: $buttonColor;
 }
 
